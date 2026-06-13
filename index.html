@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css"
   </head>
   <body>
+  <h1>Lab 5 HTML Form</h1>
     <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
       <div>
         <label for="firstname">First Name</label>
@@ -28,8 +29,8 @@
       </div>
       <div>
         <fieldset>
-        <legend>Age Sellection</legend>
-        <label>Age</label>
+        <legend>Age Selection</legend>
+        <label>(Years)</label>
           <select name="age_field">
             <option value="18-30">18-30</option>
             <option value="31-43">31-43</option>
@@ -42,7 +43,6 @@
       <div>
         <fieldset>
         <legend>Availibility</legend>
-          <label>Availibility</label>
           <label>Monday<input type="checkbox" name="available_field" value="MON"></label>
           <label>Tuesday<input type="checkbox" name="available_field" value="TUE"></label>
           <label>Wednesday<input type="checkbox" name="available_field" value="WED"></label>
@@ -53,7 +53,8 @@
         </fieldset>
       </div>
       <div>
-        <label>Comments<textarea cols="40" rows="20" name="comments_field"></textarea><label>
+        <label>Comments</label>
+        <textarea cols="30" rows="15" name="comments_field"></textarea>
       </div>
       <div>
         <input type= "submit" value="Complete Form">
