@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Form Lab 5</title>
+    <meta charset="utf-8">
+    <title>Lab 5: HTML Forms</title>
+    <link rel="stylesheet" href="style.css"
   </head>
   <body>
     <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
-      <label for="firstname">First Name</label>
-      <input id="firstname" type="text" name="first_name_field" placeholder="First Name">
-      <label for="lastname">Last Name</label>
-      <input id="lastname" type="text" name="last_name_field" placeholder="Last Name">
+      <div>
+        <label for="firstname">First Name</label>
+        <input id="firstname" type="text" name="first_name_field" placeholder="First Name">
+      </div>
+      <div>
+        <label for="lastname">Last Name</label>
+        <input id="lastname" type="text" name="last_name_field" placeholder="Last Name">
+      </div>
+      <div>
+        <label>Phone Number<input type="text" name="phone_field" placeholder="+1(XXX)XXX-XXX"></label>
+      </div>
+      <div>
+        <label>Email<input type="text" name="email_field" placeholder="name@example.com"></label>
+      </div>
+      <div>
+        <label>Male<input type="radio" name="gender_field" value="M"></label>
+        <label>Female<input type="radio" name="gender_field" value="F"></label>
+        <label>Other<input type="radio" name="gender_field" value="O"></label>
+      </div>
+      <div>
+        <fieldset>
+        <legend>Age Sellection</legend>
+        <label>Age</label>
+          <select name="age_field">
+            <option value="18-30">18-30</option>
+            <option value="31-43">31-43</option>
+            <option value="44-56">44-56</option>
+            <option value="57-69">57-69</option>
+            <option value="70+">70+</option>
+          </select>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+        <legend>Availibility</legend>
+          <label>Availibility</label>
+          <label>Monday<input type="checkbox" name="available_field" value="MON"></label>
+          <label>Tuesday<input type="checkbox" name="available_field" value="TUE"></label>
+          <label>Wednesday<input type="checkbox" name="available_field" value="WED"></label>
+          <label>Thursday<input type="checkbox" name="available_field" value="THU"></label>
+          <label>Friday<input type="checkbox" name="available_field" value="FRI"></label>
+          <label>Saturday<input type="checkbox" name="available_field" value="SAT"></label>
+          <label>Sunday<input type="checkbox" name="available_field" value="SUN"></label>
+        </fieldset>
+      </div>
+      <div>
+        <label>Comments<textarea cols="40" rows="20" name="comments_field"></textarea><label>
+      </div>
+      <div>
+        <input type= "submit" value="Complete Form">
+      </div>
+      <div>
+        <input type="hidden" value="Isaac's Site">
+      </div>
     </form>
- 
  </body>
 </html>
